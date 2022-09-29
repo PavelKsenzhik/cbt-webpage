@@ -134,6 +134,7 @@ body {
     }
     &__item {
         transition-duration: 0.4s;
+        margin: 0px 2px;
         &:hover {
             color: #fff;
             background-color: rgb(255 255 255 / 29%);
