@@ -166,11 +166,38 @@ body {
 .main-banner__title span {
   font-weight: 300;
 }
+.main-banner__title1, .main-banner__title2, .main-banner__title3, .main-banner__title4 {
+  opacity: 0;
+}
+.main-banner__title1 {
+  -webkit-animation: 20s ease-in 1s fadeOut1;
+          animation: 20s ease-in 1s fadeOut1;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.main-banner__title2 {
+  -webkit-animation: 20s ease-in 1s fadeOut2;
+          animation: 20s ease-in 1s fadeOut2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.main-banner__title3 {
+  -webkit-animation: 20s ease-in 1s fadeOut3;
+          animation: 20s ease-in 1s fadeOut3;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.main-banner__title4 {
+  -webkit-animation: 20s ease-in 1s fadeOut4;
+          animation: 20s ease-in 1s fadeOut4;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
 .main-banner__subtitle-primary {
   position: absolute;
   height: auto;
   left: 50%;
-  bottom: 25%;
+  bottom: 23%;
   transform: translate(-50%, 0%);
   font-size: 2em;
   color: #fff;
@@ -182,6 +209,10 @@ body {
   display: inline;
   font-size: 0.7em;
   line-height: 10px;
+}
+.main-banner__custom-logo {
+  height: 1.5em;
+  width: 7em;
 }
 .main-banner__years {
   position: absolute;
@@ -393,33 +424,6 @@ button:focus {
     opacity: 0;
   }
 }
-.main-banner__title1,
-.main-banner__title2,
-.main-banner__title3 {
-  opacity: 0;
-}
-
-.main-banner__title1 {
-  -webkit-animation: 15s ease-in 1s fadeOut1;
-          animation: 15s ease-in 1s fadeOut1;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.main-banner__title2 {
-  -webkit-animation: 15s ease-in 1s fadeOut2;
-          animation: 15s ease-in 1s fadeOut2;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.main-banner__title3 {
-  -webkit-animation: 15s ease-in 1s fadeOut3;
-          animation: 15s ease-in 1s fadeOut3;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -428,7 +432,6 @@ button:focus {
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -444,13 +447,10 @@ button:focus {
   10% {
     opacity: 1;
   }
-  13% {
-    opacity: 0.9;
-  }
-  16% {
+  15% {
     opacity: 1;
   }
-  33% {
+  25% {
     opacity: 0;
   }
   100% {
@@ -464,13 +464,10 @@ button:focus {
   10% {
     opacity: 1;
   }
-  13% {
-    opacity: 0.9;
-  }
-  16% {
+  15% {
     opacity: 1;
   }
-  33% {
+  25% {
     opacity: 0;
   }
   100% {
@@ -481,19 +478,13 @@ button:focus {
   0% {
     opacity: 0;
   }
-  33% {
+  25% {
     opacity: 0;
   }
-  43% {
+  35% {
     opacity: 1;
   }
-  46% {
-    opacity: 0.9;
-  }
-  49% {
-    opacity: 1;
-  }
-  66% {
+  50% {
     opacity: 0;
   }
   100% {
@@ -504,19 +495,13 @@ button:focus {
   0% {
     opacity: 0;
   }
-  33% {
+  25% {
     opacity: 0;
   }
-  43% {
+  35% {
     opacity: 1;
   }
-  46% {
-    opacity: 0.9;
-  }
-  49% {
-    opacity: 1;
-  }
-  66% {
+  50% {
     opacity: 0;
   }
   100% {
@@ -527,17 +512,17 @@ button:focus {
   0% {
     opacity: 0;
   }
-  66% {
+  50% {
     opacity: 0;
   }
-  76% {
+  60% {
     opacity: 1;
   }
-  79% {
-    opacity: 0.9;
-  }
-  82% {
+  65% {
     opacity: 1;
+  }
+  75% {
+    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -547,16 +532,50 @@ button:focus {
   0% {
     opacity: 0;
   }
-  66% {
+  50% {
     opacity: 0;
   }
-  76% {
+  60% {
     opacity: 1;
   }
-  79% {
-    opacity: 0.9;
+  65% {
+    opacity: 1;
   }
-  82% {
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeOut4 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut4 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
     opacity: 1;
   }
   100% {
