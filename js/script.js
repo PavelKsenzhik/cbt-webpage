@@ -30,10 +30,13 @@ window.onload = function () {
             setTimeout(() => {
                 startYear++;
                 if(startYear <= maxYear) {
-                    $('.main-banner__years-count').html(`${startYear}&nbsp;`);
+                    startYear < 10 ?  
+                    $('.main-banner__years-count').html(`${startYear}&nbsp;`) :
+                    $('.main-banner__years-count').html(`${startYear}&nbsp;`); 
+                    
                     runYearsCount(startYear, maxYear);
                 }
-            }, 40)
+            }, 110)
         }
     }
     
