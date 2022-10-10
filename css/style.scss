@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .page-container {
@@ -174,7 +175,7 @@ body {
         font-family: 'Roboto', sans-serif;
         font-weight: 200;
         color: white;
-        font-size: 5em;
+        font-size: 3.5em;
         span {
             font-weight: 300;
         }
@@ -187,15 +188,22 @@ body {
         opacity: 0;
     }
 
+
     &__title1 {
+        top: 40%;
+        left: 45%;
         animation: 20s ease-in 1s fadeOut1;
         animation-iteration-count: infinite;
     }
     &__title2 {
+        top: 47%;
+        left: 50%;
         animation: 20s ease-in 1s fadeOut2;
         animation-iteration-count: infinite;
     }
     &__title3 {
+        top: 54%;
+        left: 53%;
         animation: 20s ease-in 1s fadeOut3;
         animation-iteration-count: infinite;
     }
@@ -223,8 +231,8 @@ body {
     }
 
     &__custom-logo {
-        height: 1.5em;
-        width: 7em;
+        height: 3.5em;
+        width: 9em;
     }
 
     /* Year */
@@ -443,11 +451,18 @@ button:focus {
         opacity: 1;
     }
 
-    15% {
+    18% {
+        opacity: 0.6;
+    }
+    25% {
         opacity: 1;
     }
 
-    25% {
+    65% {
+        opacity: 1;
+
+    }
+    75% {
         opacity: 0;
     }
 
@@ -463,12 +478,25 @@ button:focus {
     25% {
         opacity: 0;
     }
+    
 
     35% {
         opacity: 1;
     }
 
+    43% {
+        opacity: 0.6;
+    }
+
     50% {
+        opacity: 1;
+    }
+
+    65% {
+        opacity: 1;
+
+    }
+    75% {
         opacity: 0;
     }
 
@@ -484,12 +512,7 @@ button:focus {
     50% {
         opacity: 0;
     }
-
     60% {
-        opacity: 1;
-    }
-
-    65% {
         opacity: 1;
     }
 
@@ -543,13 +566,177 @@ button:focus {
     }
 }
 
-#footer {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-    color: white;
-    position: fixed;
-    -webkit-transform: translate(95vw, 90vh);
-    -moz-transform: translate(95vw, 90vh);
-    transform: translate(95vw, 90vh);
-    transform: translate(95vw, 90vh);
+// ============ //
+//   Projects   //
+// ============ //
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
 }
+.main-project {
+    width: 100%;
+    height: 760px;
+    margin-bottom: 64px;
+    background: url('../img/projects/main-project.png');
+    background-size: cover;
+    background-position: center;
+
+		&__body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            transition-duration: 0.4s;
+		}
+		&__title {
+            width: 70%;
+            font-weight: 400;
+            color: #fff;
+            font-size: 60px;
+            line-height: 58px;
+            text-shadow: 0px 0px 32px #000;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition-duration: 0.4s;
+            
+		}
+		&__col {
+            width: 50%;
+            padding-right: 32px;
+            transition-duration: 0.4s;
+            position: absolute;
+            opacity: 0;
+            top: 35%;
+		}
+		&__col-right {
+            position: absolute;
+            right: -100%;       
+		}
+        &__col-left {
+            position: absolute;
+            left: -100%;
+		}
+		&__list {
+		}
+		&__item {
+            color: #fff;
+            text-shadow: 0px 0px 16px #000;
+            font-size: 22px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+		}
+    
+
+        // Hover 
+        &._hover {
+            .main-project {
+                &__title {
+                    top: 64px;
+                    // width: 100%;
+                    line-height: 48px;
+                    transform: translate(-50%, 0%);
+                    font-size: 50px;
+                }
+                &__col {
+                    opacity: 1;
+                }
+                &__col-right {
+                    right: 0%;       
+                }
+                &__col-left {
+                    left: 0%;
+                }
+            }
+        }
+}
+
+// Secondary Projects
+.secondary-projects {
+    width: 100%;
+    overflow: hidden;
+		&__body {
+            display: flex;
+            justify-content: space-between;
+		}
+}
+.secondary-project {
+    width: 49%;
+    height: 500px;
+    position: relative;
+    transition-duration: 0.4s;
+		&__title {
+            width: 90%;
+            text-align: center;
+            font-size: 2.5em;
+            color: #0D429B;            ;
+            line-height: 46px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition-duration: 0.4s;
+		}
+		&__list {
+            position: absolute;
+            bottom: -100px;
+            transition-duration: 0.4s;
+            opacity: 0;
+            visibility: hidden;
+            
+		}
+		&__item {
+            font-size: 20px;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+		}
+    &._hover {
+        .secondary-project {
+
+            &__title {
+                top: 32px;
+                transform: translate(-50%, 0%);
+                font-size: 2.5em;
+                line-height: 36px;
+            }
+            &__list {
+                position: absolute;
+                bottom: 64px;
+                left: 32px;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+}
+
+
+.secondary-project-right {
+    background-image: url('../img/projects/secondary-project-right.png');
+    background-color: rgb(211, 211, 211);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondary-project-left {
+    background-image: url('../img/projects/secondary-project-left.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// =================== //
+//   End of Projects   //
+// =================== //
