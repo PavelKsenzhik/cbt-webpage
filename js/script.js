@@ -25,22 +25,22 @@ window.onload = function () {
     // Years counter //
     // ============= //
 
-    function setYearsCount (startYear, maxYear) {
-        return function runYearsCount() {
-            setTimeout(() => {
-                startYear++;
-                if(startYear <= maxYear) {
-                    startYear < 10 ?  
-                    $('.main-banner__years-count').html(`${startYear}&nbsp;`) :
-                    $('.main-banner__years-count').html(`${startYear}&nbsp;`); 
+    // function setYearsCount (startYear, maxYear) {
+    //     return function runYearsCount() {
+    //         setTimeout(() => {
+    //             startYear++;
+    //             if(startYear <= maxYear) {
+    //                 startYear < 10 ?  
+    //                 $('.main-banner__years-count').html(`${startYear}&nbsp;`) :
+    //                 $('.main-banner__years-count').html(`${startYear}&nbsp;`); 
                     
-                    runYearsCount(startYear, maxYear);
-                }
-            }, 110)
-        }
-    }
+    //                 runYearsCount(startYear, maxYear);
+    //             }
+    //         }, 110)
+    //     }
+    // }
     
-    setTimeout(setYearsCount(0, 25), 100);
+    // setTimeout(setYearsCount(0, 25), 100);
 
 
     // ============= //
