@@ -36,34 +36,13 @@ window.onload = function () {
                     
                     runYearsCount(startYear, maxYear);
                 }
-            }, 110)
+            }, 80)
         }
     }
-    
+
     setTimeout(setYearsCount(0, 25), 100);
 
 
-    // ============= //
-    //    Projects   //
-    // ============= //
 
-    $('.main-project__title').hover(function () {
-        setTimeout(() => $('.main-project').addClass('_hover'), 300)
-        
-    })
-    $('.main-project').mouseleave(function () {
-        setTimeout(() => $('.main-project').removeClass('_hover'), 300)
-    })
-
-    $('.secondary-project__title').hover(function (e) {
-        setTimeout(function () {
-            $(e.target).closest('.secondary-project').addClass('_hover')
-        }, 300)
-    })
-    $('.secondary-project').mouseleave(function (e) {
-        setTimeout(function () {
-            $(e.target).removeClass('_hover')
-        }, 300)
-    })
 }
 
