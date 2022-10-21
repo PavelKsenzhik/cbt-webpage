@@ -37,11 +37,6 @@ body {
     }
 }
 
-
-
-
-
-
 .header {
     width: 100%;
     height: 117px;
@@ -574,54 +569,62 @@ body {
 .x1 {
     animation: floatUp 2.5s 1s 1 linear;
     transform: scale(1.0);
+
 }
 
 .x2 {
-    animation: floatUp 7s 0s 1 linear;
+    animation: floatUp 4s 0s 1 linear;
     transform: scale(1.6);
     left: 15%;
+
 }
 
 .x3 {
     animation: floatUp 3s 1s 1 linear;
     transform: scale(.5);
     left: -15%;
+
 }
 
 .x4 {
-    animation: floatUp 4.5s 2s 1 linear;
-    transform: scale(1.2);
+    animation: floatUp 10s 1s 1 linear;
+    transform: scale(1);
     left: -34%;
 }
 
 .x5 {
-    animation: floatUp 8s 1s 1 linear;
+    animation: floatUp 10s 1s 1 linear;
     transform: scale(2.2);
     left: -57%;
+
 }
 
 .x6 {
-    animation: floatUp 11s 2s 1 linear;
+    animation: floatUp 9s 2s 1 linear;
     transform: scale(.8);
     left: -81%;
+
 }
 
 .x7 {
-    animation: floatUp 5.4s 2s 1 linear;
+    animation: floatUp 9s 2s 1 linear;
     transform: scale(3.2);
     left: 37%;
+
 }
 
 .x8 {
-    animation: floatUp 13s 1s 1 linear;
+    animation: floatUp 10s 1s 1 linear;
     transform: scale(1.7);
     left: 62%;
+    
 }
 
 .x9 {
-    animation: floatUp 11s 2s 1 linear;
+    animation: floatUp 8s 2s 1 linear;
     transform: scale(0.9);
     left: 85%;
+    
 }
 
 button:focus {
