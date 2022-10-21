@@ -518,8 +518,8 @@ body {
 }
 
 .x2 {
-  -webkit-animation: floatUp 7s 0s 1 linear;
-          animation: floatUp 7s 0s 1 linear;
+  -webkit-animation: floatUp 4s 0s 1 linear;
+          animation: floatUp 4s 0s 1 linear;
   transform: scale(1.6);
   left: 15%;
 }
@@ -532,43 +532,43 @@ body {
 }
 
 .x4 {
-  -webkit-animation: floatUp 4.5s 2s 1 linear;
-          animation: floatUp 4.5s 2s 1 linear;
-  transform: scale(1.2);
+  -webkit-animation: floatUp 10s 1s 1 linear;
+          animation: floatUp 10s 1s 1 linear;
+  transform: scale(1);
   left: -34%;
 }
 
 .x5 {
-  -webkit-animation: floatUp 8s 1s 1 linear;
-          animation: floatUp 8s 1s 1 linear;
+  -webkit-animation: floatUp 10s 1s 1 linear;
+          animation: floatUp 10s 1s 1 linear;
   transform: scale(2.2);
   left: -57%;
 }
 
 .x6 {
-  -webkit-animation: floatUp 11s 2s 1 linear;
-          animation: floatUp 11s 2s 1 linear;
+  -webkit-animation: floatUp 9s 2s 1 linear;
+          animation: floatUp 9s 2s 1 linear;
   transform: scale(0.8);
   left: -81%;
 }
 
 .x7 {
-  -webkit-animation: floatUp 5.4s 2s 1 linear;
-          animation: floatUp 5.4s 2s 1 linear;
+  -webkit-animation: floatUp 9s 2s 1 linear;
+          animation: floatUp 9s 2s 1 linear;
   transform: scale(3.2);
   left: 37%;
 }
 
 .x8 {
-  -webkit-animation: floatUp 13s 1s 1 linear;
-          animation: floatUp 13s 1s 1 linear;
+  -webkit-animation: floatUp 10s 1s 1 linear;
+          animation: floatUp 10s 1s 1 linear;
   transform: scale(1.7);
   left: 62%;
 }
 
 .x9 {
-  -webkit-animation: floatUp 11s 2s 1 linear;
-          animation: floatUp 11s 2s 1 linear;
+  -webkit-animation: floatUp 8s 2s 1 linear;
+          animation: floatUp 8s 2s 1 linear;
   transform: scale(0.9);
   left: 85%;
 }
